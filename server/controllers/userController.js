@@ -34,6 +34,7 @@ exports.about = async (req, res) => {
   }
 };
 
+
 // get data
 exports.getData = async (req, res) => {
   try {
@@ -75,6 +76,10 @@ exports.submit = async (req, res) => {
     }
   };
 
+// contact page
 
+exports.getContact = function (req, res) {
+  res.render('contact')
+}
 
 

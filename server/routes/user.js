@@ -7,6 +7,7 @@ router.get('/', userController.homepage);
 router.get('/about', userController.about);
 router.post('/submit', userController.submit);
 router.get('/dataTable', userController.getData);
+router.get('/contact', userController.getContact);
 
 // Exportez le router pour l'utiliser dans d'autres parties de l'application
 module.exports = router;

@@ -1,6 +1,7 @@
 const express = require("express");
 const expressLayout = require("express-ejs-layouts");
 const connectDB = require("./server/config/db");
+const router = require("./server/routes/user")
 
 // Activer express
 const app = express();
@@ -25,7 +26,7 @@ app.set("layout", "./layouts/main");
 app.set("view engine", "ejs");
 
 // L'entrer de notre app routes.txt
-app.use("/", require("./server/routes/user"));
+app.use("/", router);
 
 //  Handle 404
 app.get("*", (req, res) => {
