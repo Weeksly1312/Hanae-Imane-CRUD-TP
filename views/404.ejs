@@ -1,0 +1,9 @@
+<h2>Error 404</h2>
+
+<% if (showAlert) { %>
+    <script>
+      // Display SweetAlert message when the page loads
+      swal("<%= message %>", "", "<%= alertType %>");
+    </script>
+  <% } %>
+
