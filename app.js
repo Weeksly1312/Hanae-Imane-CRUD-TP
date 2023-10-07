@@ -1,7 +1,7 @@
 const express = require("express");
 const expressLayout = require("express-ejs-layouts");
 const connectDB = require("./server/config/db");
-const router = require("./server/routes/user")
+const router = require("./server/routes/user");
 
 // Activer express
 const app = express();
